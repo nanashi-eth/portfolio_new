@@ -1,0 +1,62 @@
+.spotify-container {
+    padding: 0.5rem 1rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+    position: fixed;
+    top: 82%;
+    left: -15rem;
+    background: black;
+    transition: all 0.5s ease;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0.5;
+    z-index: 3;
+}
+
+.spotify-container.offline {
+    left: -11rem;
+    width: 15rem;
+    padding: 0.5rem;
+}
+
+@media (max-width: 800px) {
+    .spotify-container.offline {
+        left: -9rem;
+    }
+}
+
+.spotify-container:hover {
+    left: 0;
+    opacity: 1;
+}
+
+.spotify-container p {
+    color: rgba(189, 189, 189, 0.87);
+    font-size: 1.3rem;
+}
+
+.playing-text {
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.playing-text span {
+    color: #1ccc5b;
+    display: block;
+    font-weight: 600;
+}
+
+.playing-text span:nth-child(3) {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.playing-text p {
+    color: white;
+    font-size: 1.3rem;
+}

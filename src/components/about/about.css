@@ -6,11 +6,51 @@
 
 .about__me {
     width: 100%;
-    aspect-ratio: 1/1;
+    /* aspect-ratio: 1/1; */
     border-radius: 2rem;
-    background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+    /* background: linear-gradient(45deg, transparent, var(--color-primary), transparent); */
     display: grid;
     place-items: center;
+}
+
+
+.about__me {
+    width: 100%;
+    border-radius: 2rem;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+/* Pseudo-elemento para las esquinas superiores */
+.about__me::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    border-radius: 2rem 0 0 0; /* Redondea solo la esquina superior izquierda */
+    border: 2px solid var(--color-primary);
+    border-bottom: none;
+    border-right: none;
+    box-sizing: border-box; /* Asegura que el tamaño se calcule correctamente con los bordes */
+}
+
+/* Pseudo-elemento para las esquinas inferiores */
+.about__me::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+    border-radius: 0 0 2rem 0; /* Redondea solo la esquina inferior derecha */
+    border: 2px solid var(--color-primary);
+    border-top: none;
+    border-left: none;
+    box-sizing: border-box; /* Asegura que el tamaño se calcule correctamente con los bordes */
 }
 
 .about__me-image{

@@ -8,8 +8,8 @@ import { VscFolderLibrary } from "react-icons/vsc";
 const About = () => {
   return (
     <section id="about">
-      <h5>Who am I?</h5>
-      <h2>Allow me to introduce myself</h2>
+      <h5>¿Quién soy?</h5>
+      <h2>Permíteme presentarme</h2>
 
       <div className="container about__container">
         <div className="about__me">

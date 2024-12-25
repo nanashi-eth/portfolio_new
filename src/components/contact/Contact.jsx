@@ -2,7 +2,7 @@ import React from 'react'
 import './contact.css'
 import {MdOutlineEmail} from 'react-icons/md'
 import {RiMessengerLine} from 'react-icons/ri'
-import {BsWhatsapp} from 'react-icons/bs'
+import {BsTelegram, BsWhatsapp} from 'react-icons/bs'
 
 const Contact = () => {
   return (
@@ -17,17 +17,17 @@ const Contact = () => {
             <h5>exsample@gmail.com</h5>
             <a href="mailto:exsample@gmail.com" target="_blank">Send a message</a>
           </article>
-          <article className='contact__option'>
+          {/* <article className='contact__option'>
             <RiMessengerLine  className='contact__option-icon'/>
             <h4>Messenger</h4>
             <h5>facebook.com</h5>
             <a href="https://facebook.com" target="_blank">Send a message</a>
-          </article>
+          </article> */}
           <article className='contact__option'>
-            <BsWhatsapp  className='contact__option-icon'/>
+            <BsTelegram  className='contact__option-icon'/>
             <h4>WhatsApp</h4>
             <h5>+123-456-7890</h5>
-            <a href="https://www.whatsapp.com" target="_blank">Send a message</a>
+            <a href="https://www.telegram.com" target="_blank">Send a message</a>
           </article>
         </div>
         {/* END OF CONTACT OPTION */}
