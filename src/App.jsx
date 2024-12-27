@@ -9,10 +9,12 @@ import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Spotify from "./components/spotify/Spotify";
+import Preloader from "./components/loader/Loader";
 
 export const App = () => {
   return (
     <>
+      <Preloader /> 
       <Header />
       <Nav />
       <About />
