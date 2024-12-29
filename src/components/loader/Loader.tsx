@@ -1,83 +1,61 @@
-import React, { useEffect, useRef, useState } from "react";
-import gsap from "gsap";
-import imagesLoaded from "imagesloaded";
+import React, { useEffect, useState } from "react";
+import { gsap } from "gsap";
+import "./loader.css"; // Asegúrate de importar el CSS
 
-// Importa tu componente de cabecera o reemplázalo con el JSX correspondiente
-import SectionHeader from "./SectionHeader";
-
-// Estilos
-import "../../assets/variables.scss";
-import "./loader.css";
-import "./animations.js"
-
-const Preloader: React.FC = () => {
-  const [loadingText] = useState([
-    "Generando Nodos",
-    "Retocando Imágenes",
-    "Bebiendo Café",
-    "Finalizando Procesos",
-  ]);
-  const counterRef = useRef<HTMLSpanElement | null>(null);
-  const loadingBarRef = useRef<HTMLDivElement | null>(null);
+const Preloader = () => {
+  const [isVisible, setIsVisible] = useState(true); // Controla la visibilidad del preloader
 
   useEffect(() => {
-    const images = document.querySelectorAll("img");
-    const imageLoad = imagesLoaded(images);
-    const progressBar = loadingBarRef.current;
-    const counter = counterRef.current;
+    const unit = document.querySelector(".preloader__number--unit");
+    const decimal = document.querySelector(".preloader__number--decimal");
+    const hundred = document.querySelector(".preloader__number--hundred");
 
-    let loadedCount = 0;
-    let loadingProgress = 0;
-
-    // Timeline para animaciones
-    const loadingTl = gsap.timeline({
-      paused: false,
-      onUpdate: () => countPercent(counter, loadingTl),
-      onComplete: loadComplete,
+    // Animación con GSAP
+    const animation = gsap.timeline({
+      defaults: { ease: "power4.inOut" },
+      onComplete: () => {
+        // Añade el desvanecimiento cuando la animación termine
+        gsap.to(".preloader", {
+          opacity: 0,
+          duration: 1,
+          onComplete: () => setIsVisible(false),
+        });
+      },
     });
 
-    loadingTl.to(progressBar, { width: "100%", duration: 2, ease: "power2.inOut" });
+    animation.to(unit, { y: "-=1000%", duration: 2 });
+    animation.to(decimal, { y: "-=1000%", duration: 1.5 }, "<0.5");
+    animation.to(hundred, { y: "-=100%", duration: 1.5 }, "<0.05");
 
-    // Listener de progreso de carga
-    imageLoad.on("progress", () => {
-      loadedCount++;
-      loadingProgress = loadedCount / images.length;
-      gsap.to(loadingTl, { progress: loadingProgress, duration: 0.5 });
-    });
-
-    function countPercent(counter: HTMLSpanElement | null, timeline: gsap.core.Timeline) {
-      if (counter) {
-        const newPercent = (timeline.progress() * 100).toFixed();
-        counter.textContent = `${newPercent}%`;
-      }
-    }
-
-    function loadComplete() {
-      console.log("Carga completa");
-      // Aquí puedes añadir acciones adicionales cuando la carga termine
-    }
+    return () => {
+      animation.kill(); // Limpia la animación al desmontar el componente
+    };
   }, []);
 
+  if (!isVisible) return null; // Si el preloader ya no es visible, no renderizarlo
+
   return (
-    <>
-      <section className="preloader-section">
-        <SectionHeader text="Cargando" />
-        {/* <SectionHeader orientation="vertical" text="Loading" /> */}
-        <div className="container">
-          <div className="loader-container">
-            <div className="text">
-              <p>Preparándolo todo...</p>
+    <div className="preloader">
+      <div className="preloader__wrapper">
+        <div className="preloader__counter">
+          <div className="preloader__mask">
+            <div className="preloader__number preloader__number--hundred">
+              0 1 2 3 4 5 6 7 8 9
             </div>
-            <div className="loader">
-              <div id="loading-bar" ref={loadingBarRef}></div>
+          </div>
+          <div className="preloader__mask">
+            <div className="preloader__number preloader__number--decimal">
+              0 1 2 3 4 5 6 7 8 9 0
             </div>
-            <span id="counter" ref={counterRef}>0%</span>
+          </div>
+          <div className="preloader__mask">
+            <div className="preloader__number preloader__number--unit">
+              0 1 2 3 4 5 6 7 8 9 0
+            </div>
           </div>
         </div>
-      </section>
-      <section></section>
-      <section></section>
-    </>
+      </div>
+    </div>
   );
 };
 

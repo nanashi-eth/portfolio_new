@@ -31,7 +31,7 @@ const Contact = () => {
           </article>
         </div>
         {/* END OF CONTACT OPTION */}
-        <form action='https://formsubmit.co/5d65aef9276eac8011da24344ef2c022' method='post' class='contact-form'>
+        <form action='https://formsubmit.co/5d65aef9276eac8011da24344ef2c022' method='post' className='contact-form'>
           <input type='text' name='name' id='name' placeholder='Your Full Name' required />
           <input type='text' name='email' id='email' placeholder='Your Email' required />
           <textarea name='message' id='message' rows='7' placeholder='Your message' required></textarea>
