@@ -6,7 +6,7 @@
 
 .about__me {
     width: 100%;
-    /* aspect-ratio: 1/1; */
+    aspect-ratio: 11/8;
     border-radius: 2rem;
     /* background: linear-gradient(45deg, transparent, var(--color-primary), transparent); */
     display: grid;
@@ -30,7 +30,7 @@
     height: 50%;
     top: 0;
     left: 0;
-    border-radius: 2rem 0 0 0; /* Redondea solo la esquina superior izquierda */
+    border-radius: 0.2rem 0 0 0; 
     border: 2px solid var(--color-primary);
     border-bottom: none;
     border-right: none;
@@ -46,7 +46,7 @@
     height: 50%;
     bottom: 0;
     right: 0;
-    border-radius: 0 0 2rem 0; /* Redondea solo la esquina inferior derecha */
+    border-radius: 0 0 0.2rem 0; 
     border: 2px solid var(--color-primary);
     border-top: none;
     border-left: none;
@@ -54,11 +54,14 @@
 }
 
 .about__me-image{
-    border-radius: 2rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.2rem;
     overflow: hidden;
     transform: rotate(10deg);
     transition: var(--transition);
 }
+
 
 .about__me-image:hover{
     transform: rotate(0deg);

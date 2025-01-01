@@ -35,7 +35,7 @@ const Spotify: React.FC = () => {
   return (
     <div className={`spotify-container ${!playingSong ? "offline" : ""}`}>
       {!playingSong ? (
-        <p>Nanashi Is Offline</p>
+        <p>Nanashi esta Desconectado</p>
       ) : (
         <div
           onClick={() => openTab(playingSong.songUrl)}

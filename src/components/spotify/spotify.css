@@ -39,7 +39,7 @@
 }
 
 .playing-text {
-    width: 80%;
+    width: 75%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -63,4 +63,25 @@
 
 .spotify-container.offline p{
     font-size: 1.2rem;
+}
+
+@media (max-width: 800px) {
+    .spotify-container {
+        width: 13rem; /* Reducir el ancho */
+        left: -8.2rem;
+        padding: 0.4rem 0.8rem; /* Reducir el padding */
+        top: 77%; /* Subir la posición */
+    }
+
+    .playing-text {
+        width: 65%;
+    }
+
+    .spotify-container p {
+        font-size: 0.6rem; /* Reducir tamaño de fuente */
+    }
+
+    .playing-text p {
+        font-size: 0.8rem; /* Reducir tamaño de fuente */
+    }
 }

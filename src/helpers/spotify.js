@@ -7,9 +7,9 @@ const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
 
 const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
 
-const client_id = "4091201d5e194dbeb8375bdf77920981";
-const client_secret = "34981cf5214248e89b34dc83c8b3752d";
-const refresh_token = "AQBA81z_iGxNJ4WHwa9Pd9MoTk-erBBZ_2WxFlQC8ET8fdKV7VYTDy4pASeqDFTJ3NzDV4aaHehLyQ9AXXPifAyVDXxOw_l4mWJv8kqcA588rowy_PeysbJnGZ1Y-dqjE3g";
+const client_id = "4340c2dd2d614adfbd9c28cd8ad2b0d1";
+const client_secret = "f3236cd093404327b4798e25e21ef1e4";
+const refresh_token = "AQCvqM4At9xLpqBXu88KWRJOjAfW_TXSXqLjmPPOnJUvwJFHFcsN3FIBwiCni7LdbUgFH0deWLWcC1Mi7fu0jr_8EALUkaGzW8u7UUzUQ8S2ZC88zd0ZIrAto7fS4V6mB1U";
 
 
 const getAccessToken = async () => {

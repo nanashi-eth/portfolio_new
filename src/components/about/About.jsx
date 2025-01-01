@@ -21,25 +21,29 @@ const About = () => {
           <div className="about__cards">
             <article className="about__card">
               <FaAward className="about__icon" />
-              <h5>Experience</h5>
-              <small>4+ years of project experince</small>
+              <h5>Experiencia</h5>
+              <small>Más de 3 años desarrollando proyectos</small>
             </article>
             <article className="about__card">
               <FiUsers className="about__icon" />
-              <h5>Qualifications</h5>
-              <small>I have certifications in Bootstrap 5, React, and React Native</small>
+              <h5>Certificaciones</h5>
+              <small>
+                Cuento con certificaciones en Bootstrap 5, React y React Native
+              </small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
-              <h5>Projects</h5>
-              <small>80+ Completed</small>
+              <h5>Proyectos</h5>
+              <small>50+ completados con éxito</small>
             </article>
           </div>
           <p>
-          I am avalible anytime Monday through Friday between the hours of 10 AM to 6 PM. I will follow up as soon as possible. 
-
+            Estoy disponible de lunes a viernes, entre las 10:00 y las 15:00. Me comprometo a responder lo antes posible.
           </p>
-          <a href="#contact" className="btn btn-primary">Let's Talk</a>
+
+          <a href="#contact" className="btn btn-primary">
+            Contactemos
+          </a>
         </div>
       </div>
     </section>
