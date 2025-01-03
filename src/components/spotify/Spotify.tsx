@@ -15,12 +15,21 @@ const Spotify: React.FC = () => {
   const [playingSong, setPlayingSong] = useState<PlayingSong | null | false>(
     null
   );
-
+// ------------------------------------------------------------------------------
   const getPlayingSong = async () => {
     const result = await getNowPlayingItem();
     setPlayingSong(result);
   };
 
+  // const getPlayingSong = async () => {
+  //   const response = await fetch("/now-playing.json"); // Cargar el archivo JSON
+  //   if (response.ok) {
+  //     const data = await response.json();
+  //     setPlayingSong(data.isPlaying ? data : false);
+  //   }
+  // };
+
+// ----------------------------------------------------------------------------------
   const openTab = (link: string) => {
     window.open(link, "_blank");
   };
