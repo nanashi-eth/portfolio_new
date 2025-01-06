@@ -28,7 +28,7 @@ const About = () => {
               <FiUsers className="about__icon" />
               <h5>Certificaciones</h5>
               <small>
-                Cuento con certificaciones en Bootstrap 5, React y React Native
+                Cuento con certificaciones en Desarrollo, Ciberseguridad y DevOps
               </small>
             </article>
             <article className="about__card">
