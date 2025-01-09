@@ -50,7 +50,7 @@ const Spotify: React.FC = () => {
           onClick={() => openTab(playingSong.songUrl)}
           className="playing-text"
         >
-          <span>Nanashi esta escuchando...</span>
+          <span>Estoy escuchando...</span>
           <p>{playingSong.title}</p>
           <span>{playingSong.artist}</span>
         </div>
