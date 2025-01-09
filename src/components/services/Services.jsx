@@ -5,129 +5,87 @@ import { BiCheck } from "react-icons/bi";
 const Services = () => {
   return (
     <section id="services">
-      <h5>What do I offer?</h5>
-      <h2>What I offer</h2>
+      <h5>¿Qué ofrezco?</h5>
+      <h2>Mis Habilidades</h2>
       <div className="container services__container">
+        {/* Desarrollo de Aplicaciones Multiplataforma */}
         <article className="service">
           <div className="service__head">
-            <h3>Bootstrap 5</h3>
+            <h3>Desarrollo de Aplicaciones Multiplataforma</h3>
           </div>
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-       I can create custom Bootstrap themes for any client or business
-              </p>
+              <p>He desarrollado aplicaciones nativas e híbridas utilizando Android y frameworks multiplataforma.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-              I can create clean UI designs for web applications or mobile apps.
-              </p>
+              <p>He implementado APIs RESTful con mecanismos de autenticación segura como JWT.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-              I can make a visually appealing landing pages for marketing campaigns.</p>
+              <p>Puedo trabajar con bases de datos como PostgreSQL y MySQL para una gestión robusta de datos.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-              I can make an easy-to-use interface for online shopping.
-              </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>
-           I can offer maintenance services to clients enhancements to their apps.
-              </p>
+              <p>Aplico buenas prácticas de desarrollo para garantizar código limpio, escalable y mantenible.</p>
             </li>
           </ul>
         </article>
-        {/* END OF UI/UX */}
+
+        {/* Desarrollo Web */}
         <article className="service">
           <div className="service__head">
-            <h3>Python</h3>
+            <h3>Desarrollo Web</h3>
           </div>
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-            I can make 2D and 3D models for both web development and applications. </p>
+              <p>He desarrollado aplicaciones web modernas utilizando frameworks como Angular.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-              I do audio processing tasks like speech recognition, music analysis, and sound synthesis with libraries like PyAudio.             
-              </p>
+              <p>He implementado técnicas de optimización como lazy loading, paginación y carga asíncrona para mejorar el rendimiento web.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-              I can use a range of UI components and tools to build high-quality, user-friendly mobile apps.              
-              </p>
+              <p>He trabajado con frameworks de backend como Spring Boot y NodeJS para el desarrollo full-stack.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-              I can manipulate widely used scientific computing libraries like SciPy and AstroPy.              </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>
-              I use libraries like PyTorch to build neural networks, analyze data, and create intelligent systems.              </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>
-              I can use NumPy to provide functionality for numerical integration and symbolic mathematics. 
-                           </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>
-              I can use frameworks like Django and Flask are used to build web applications.
-              </p>
+              <p>Gestiono el control de versiones utilizando Git y plataformas como GitHub.</p>
             </li>
           </ul>
         </article>
-        {/* END OF WEB DEVELOPMENT */}
+
+        {/* Administración de Servidores y Redes */}
         <article className="service">
           <div className="service__head">
-            <h3>Some Back-end experince</h3>
+            <h3>Administración de Servidores y Redes</h3>
           </div>
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-                I can handle server-side logic.
-              </p>
+              <p>He configurado y bastionado servidores web populares como Apache y Nginx.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-              I can manage data using databases such as MySQL and PostgreSQL. 
-              </p>
+              <p>He utilizado certificados SSL/TLS con herramientas como Let's Encrypt para mejorar la seguridad.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-              I can build APIs that allow client-side applications to interact with the server-side.
-              </p>
+              <p>He diseñado topologías de red y configurado infraestructuras seguras.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-              Implement testing and debugging              </p>
+              <p>Puedo manejar y configurar herramientas como ELK y Wireshark para monitorear y solucionar problemas de red.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>
-             I also deploy and manage servers              </p>
+              <p>He implementado y gestionado aplicaciones contenedorizadas usando Docker.</p>
             </li>
           </ul>
         </article>
-        {/* END OF CONTENT CREATION */}
       </div>
     </section>
   );
