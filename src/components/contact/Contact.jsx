@@ -16,6 +16,19 @@ const Contact = () => {
             <h4>Correo</h4>
             <h5>jose98_rbb@hotmail.com</h5>
             <a href="mailto:jose98_rbb@hotmail.com" target="_blank">Enviar mensaje</a>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                fill="white"
+                class="bi bi-arrow-up-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"
+                />
+              </svg>
           </article>
           {/* <article className='contact__option'>
             <RiMessengerLine  className='contact__option-icon'/>
@@ -28,6 +41,19 @@ const Contact = () => {
             <h4>Telegram</h4>
             <h5>nanashi_wh</h5>
             <a href="https://t.me/nanashi_wh" target="_blank">Enviar mensaje</a>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="10"
+                height="10"
+                fill="white"
+                class="bi bi-arrow-up-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"
+                />
+              </svg>
           </article>
         </div>
         {/* END OF CONTACT OPTION */}
@@ -35,7 +61,7 @@ const Contact = () => {
           <input type='text' name='name' id='name' placeholder='Tu nombre completo' required />
           <input type='text' name='email' id='email' placeholder='Tu correo electrónico' required />
           <textarea name='message' id='message' rows='7' placeholder='Escribe tu mensaje aquí' required></textarea>
-          <button type='submit' className='btn btn-primary'>Enviar mensaje</button>
+          <button type='submit' className='btn btn-primary' data-hover-text="Enviar mensaje"><span>Enviar mensaje</span></button>
         </form>
       </div>
     </section>

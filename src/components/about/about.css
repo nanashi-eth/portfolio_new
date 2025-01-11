@@ -13,21 +13,7 @@
     position: relative;
     aspect-ratio: 11/8;
 }
-
-/* Pseudo-elemento para las esquinas superiores */
-/* .about__me::before {
-    content: "";
-    position: absolute;
-    width: 50%;
-    height: 50%;
-    top: 0;
-    left: 0;
-    border-radius: 0.2rem 0.2rem 0.2rem 0.2rem;
-    border: 1px solid #131313;
-    filter: invert(0.5);
-    box-sizing: border-box;
-    /* Asegura que el tamaño se calcule correctamente con los bordes */
-/* } */ 
+ 
 
 /* Pseudo-elemento para las esquinas inferiores */
 .about__me-image::after {
