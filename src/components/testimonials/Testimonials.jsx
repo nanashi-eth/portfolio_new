@@ -41,8 +41,8 @@ const Testimonials = () => {
 
   return (
     <section id="testimonials">
-      <h5>Certifications</h5>
-      <h2>Education</h2>
+      <h5>Certificaciones</h5>
+      <h2>Formación</h2>
       <Swiper className="container testimonials__container"
             modules={[Pagination]}
             spaceBetween={40}

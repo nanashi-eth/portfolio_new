@@ -44,8 +44,8 @@ const About = () => {
             Estoy disponible de lunes a viernes, entre las 10:00 y las 15:00. Me comprometo a responder lo antes posible.
           </p>
 
-          <a href="#contact" className="btn btn-primary">
-            Contactemos
+          <a href="#contact" className="btn btn-primary" data-hover-text="Contactemos">
+            <span>Contactemos</span>
           </a>
         </div>
       </div>

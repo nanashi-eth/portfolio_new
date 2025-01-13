@@ -7,7 +7,7 @@ import {BsTelegram, BsWhatsapp} from 'react-icons/bs'
 const Contact = () => {
   return (
     <section id='contact'>
-      <h5>Ponte en contacto</h5>
+      <h5>Conecta conmigo</h5>
       <h2>Contáctame</h2>
       <div className="container contact__container">
         <div className="contact__options">
@@ -61,7 +61,9 @@ const Contact = () => {
           <input type='text' name='name' id='name' placeholder='Tu nombre completo' required />
           <input type='text' name='email' id='email' placeholder='Tu correo electrónico' required />
           <textarea name='message' id='message' rows='7' placeholder='Escribe tu mensaje aquí' required></textarea>
-          <button type='submit' className='btn btn-primary' data-hover-text="Enviar mensaje"><span>Enviar mensaje</span></button>
+          <button type='submit' className='btn btn-primary' data-hover-text='Enviar mensaje'>
+              <span>Enviar mensaje</span>
+          </button>
         </form>
       </div>
     </section>

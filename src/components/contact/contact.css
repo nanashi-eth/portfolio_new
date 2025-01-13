@@ -61,13 +61,14 @@ textarea {
     transition: all 0.3s ease;
 }
 
-.contact__option:hover svg{
+.contact__option:hover svg {
     margin: 0 0.6rem;
     opacity: 1;
     transform: translateX(0%);
     transform: scale(105%);
 }
-.contact__option:hover a{
+
+.contact__option:hover a {
     transform: scale(105%);
 }
 

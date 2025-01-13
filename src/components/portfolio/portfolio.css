@@ -50,3 +50,22 @@
         gap: 1rem;
      }
 }
+
+
+.portfolio__item-cta svg {
+    margin: 0 0.4rem;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+}
+
+.portfolio__item-cta .btn:hover svg {
+    margin: 0 0.3rem;
+    opacity: 1;
+    transform: translateX(0%);
+    transform: scale(105%);
+}
+
+.portfolio__item-cta:hover a {
+    transform: scale(105%);
+}

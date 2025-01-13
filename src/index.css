@@ -51,6 +51,10 @@ body {
     background-image: url(../src/assets/bg-texture.png);
 }
 
+span {
+    font-family: var(--body-font);
+}
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
     width: var(--container-width-lg);
@@ -108,6 +112,52 @@ a:hover {
     transition: var(--transition);
 }
 
+
+.btn {
+    min-width: 9rem;
+    min-height: 3rem;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn span {
+    position: absolute;
+    width: max-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+    color: var(--color-primary);
+}
+
+.btn::after {
+    content: attr(data-hover-text);
+    display: block;
+    position: absolute;
+    text-align: center;
+    font-family: var(--body-font);
+    transform: translate(-50%, 50%);
+    opacity: 0;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transition: all 0.3s ease;
+}
+
+.btn:hover span {
+    opacity: 0;
+    transform: translate(-50%, -150%);
+    transition-duration: 0.2s;
+}
+
+.btn:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
 .btn:hover {
     background: var(--color-white);
     color: var(--color-bg);
@@ -116,6 +166,11 @@ a:hover {
 
 .btn-primary {
     background: var(--color-primary);
+    color: var(--color-bg);
+}
+
+
+.btn-primary span{
     color: var(--color-bg);
 }
 
@@ -155,7 +210,14 @@ img {
     }
 }
 
-p::selection, h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, a::selection, span::selection {
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+a::selection,
+span::selection {
     background: #ccbaa7;
     color: var(--color-bg);
 }
