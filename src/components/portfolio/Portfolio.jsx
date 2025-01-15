@@ -4,7 +4,7 @@ import Img1 from "../../assets/portfolio1.jpg";
 import Img2 from "../../assets/portfolio2.jpg";
 import Img3 from "../../assets/portfolio3.jpg";
 import Img4 from "../../assets/portfolio4.jpg";
-import Img5 from "../../assets/portfolio5.png";
+import Img5 from "../../assets/portfolio5.jpg";
 import Img6 from "../../assets/portfolio6.jpg";
 
 const Portfolio = () => {
@@ -31,7 +31,7 @@ const Portfolio = () => {
       id: 4,
       image: Img4,
       title: "Man in the middle python",
-      github: "https://github.com",
+      github: "https://github.com/nanashi-eth/Man-in-the-middle.git",
     },
     {
       id: 5,
@@ -54,24 +54,24 @@ const Portfolio = () => {
       <div className="container portfolio__container">
         {data.map(({ id, image, title, github }) => {
           return (
-            <article className="portfolio__item">
+            <article className="portfolio__item" key={id}>
               <div className="protfolio__item-image">
                 <img src={image} alt={title} />
               </div>
               <h3>{title}</h3>
               <div className="portfolio__item-cta">
-                <a href={github} className="btn" target="_blank">
+                <a href={github} className="btn" target="_blank" rel="noopener noreferrer">
                   Github
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="14"
                     height="14"
                     fill="black"
-                    class="bi bi-arrow-up-right"
+                    className="bi bi-arrow-up-right"
                     viewBox="0 0 16 16"
                   >
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"
                     />
                   </svg>

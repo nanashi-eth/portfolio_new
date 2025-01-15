@@ -14,7 +14,7 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-          <p class="disclaimer">
+          <p className="disclaimer">
           "**YO Y MI FIEL COMPAÑERA ¡A PAWFECT PARTNERSHIP!"
           </p>
             <img src={MeAbout} alt="About Image" />
