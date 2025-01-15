@@ -5,7 +5,7 @@ import Img2 from "../../assets/portfolio2.jpg";
 import Img3 from "../../assets/portfolio3.jpg";
 import Img4 from "../../assets/portfolio4.jpg";
 import Img5 from "../../assets/portfolio5.jpg";
-import Img6 from "../../assets/portfolio6.jpg";
+import docker from "../../assets/docker.pdf";
 
 const Portfolio = () => {
   const data = [
@@ -19,13 +19,13 @@ const Portfolio = () => {
       id: 2,
       image: Img2,
       title: "Lichi front angular",
-      github: "https://github.com",
+      github: "https://github.com/nanashi-eth/lichi-front.git",
     },
     {
       id: 3,
       image: Img3,
       title: "Lichi back springboot",
-      github: "https://github.com",
+      github: "https://github.com/nanashi-eth/lichi.git",
     },
     {
       id: 4,
@@ -37,14 +37,15 @@ const Portfolio = () => {
       id: 5,
       image: Img5,
       title: "Docker",
-      github: "https://github.com",
+      file: docker,
+      github: "https://github.com/nanashi-eth/docker.git",
     },
-    {
-      id: 6,
-      image: Img6,
-      title: "Github",
-      github: "https://github.com/NTR64/Green-Tomato-Landing-Page",
-    },
+    // {
+    //   id: 6,
+    //   image: Img6,
+    //   title: "Github",
+    //   github: "https://github.com/NTR64/Green-Tomato-Landing-Page",
+    // },
   ];
 
   return (
@@ -52,7 +53,7 @@ const Portfolio = () => {
       <h5>Mis Trabajos Recientes</h5>
       <h2>Proyectos</h2>
       <div className="container portfolio__container">
-        {data.map(({ id, image, title, github }) => {
+        {data.map(({ id, image, title, github, file }) => {
           return (
             <article className="portfolio__item" key={id}>
               <div className="protfolio__item-image">
@@ -60,7 +61,12 @@ const Portfolio = () => {
               </div>
               <h3>{title}</h3>
               <div className="portfolio__item-cta">
-                <a href={github} className="btn" target="_blank" rel="noopener noreferrer">
+                <a
+                  href={github}
+                  className="btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Github
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -76,6 +82,27 @@ const Portfolio = () => {
                     />
                   </svg>
                 </a>
+                {file && (
+                  <a
+                    href={file}
+                    className="btn btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Descargar
+                    <svg
+                      fill="black"
+                      width="14"
+                      height="14"
+                      viewBox="-5 -7 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                      preserveAspectRatio="xMinYMin"
+                      class="jam jam-download"
+                    >
+                      <path d="M8 6.641l1.121-1.12a1 1 0 0 1 1.415 1.413L7.707 9.763a.997.997 0 0 1-1.414 0L3.464 6.934A1 1 0 1 1 4.88 5.52L6 6.641V1a1 1 0 1 1 2 0v5.641zM1 12h12a1 1 0 0 1 0 2H1a1 1 0 0 1 0-2z" />
+                    </svg>
+                  </a>
+                )}
               </div>
             </article>
           );

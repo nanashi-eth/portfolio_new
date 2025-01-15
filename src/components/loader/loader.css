@@ -1,6 +1,18 @@
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../../assets/fonts/Outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+
 :root {
 	--preloader-white: #131313;
 	--preloader-black: #FFFFFF;
+}
+
+
+.preloader {
+    font-family: 'Outfit';
 }
 
 .preloader {

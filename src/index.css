@@ -1,5 +1,22 @@
-/*========== GOOGLE FONT ==========*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+/* ========== FUENTES LOCALES ========== */
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400; /* Normal */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+  }
+
+
+
+
+
 
 /*========== VARIABLE CSS ==========*/
 :root {
@@ -50,6 +67,7 @@ body {
     line-height: 1.7;
     background-image: url(../src/assets/bg-texture.png);
 }
+
 
 span {
     font-family: var(--body-font);
@@ -170,7 +188,7 @@ a:hover {
 }
 
 
-.btn-primary span{
+.btn-primary span {
     color: var(--color-bg);
 }
 
