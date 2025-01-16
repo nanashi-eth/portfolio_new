@@ -14,9 +14,11 @@
 
 .testimonial{
     background: var(--color-bg-variant);
+    min-height: 100%;
     text-align: center;
     padding: 2rem;
     border-radius: 2rem;
+    -webkit-user-select: none;
     user-select: none;
 }
 
@@ -51,4 +53,42 @@ background: var(--color-primary);
     .client__review{
         width: var(--container-width-sm);
     }
+}
+
+.swiper-slide{
+    height: auto !important;
+}
+
+
+.swiper{
+    height: 100%;
+}
+
+
+.swiper-content{
+    height: 100% !important
+}
+
+
+.client__name-link{
+    display: inline-block;
+}
+
+
+.client__name-link svg {
+    margin: 0 0.4rem;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+}
+
+.client__name-link:hover svg {
+    margin: 0 0.6rem;
+    opacity: 1;
+    transform: translateX(0%);
+    transform: scale(105%);
+}
+
+.client__name-link:hover a {
+    transform: scale(105%);
 }
