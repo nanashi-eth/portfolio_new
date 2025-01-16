@@ -18,7 +18,7 @@
 }
 
 .portfolio__item-image {
-    border-radius: 1.5rem;
+    /* border-radius: 1.5rem; */
     overflow: hidden;
 }
 
@@ -37,7 +37,7 @@
 
 /*========== Medium devices ==========*/
 @media screen and (max-width:1024px) {
-    .protfolio__container {
+    .portfolio__container {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.2rem;
     }
@@ -71,11 +71,11 @@
 }
 
 
-.portfolio__container article:hover .protfolio__item-image img {
+.portfolio__container article:hover .portfolio__item-image img {
     border: 1px solid white;
 }
 
-.portfolio__container article .protfolio__item-image img {
+.portfolio__container article .portfolio__item-image img {
     aspect-ratio: 16 / 9;
     object-fit: cover;
     width: 100%;

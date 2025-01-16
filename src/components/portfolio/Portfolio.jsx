@@ -12,31 +12,31 @@ const Portfolio = () => {
     {
       id: 1,
       image: Img1,
-      title: "Portfolio React",
+      title: "Portfolio desarrollado con React 18",
       github: "https://github.com/nanashi-eth/portfolio_new",
     },
     {
       id: 2,
       image: Img2,
-      title: "Lichi front angular",
+      title: "Aplicación web desarrollada con Angular 17",
       github: "https://github.com/nanashi-eth/lichi-front.git",
     },
     {
       id: 3,
       image: Img3,
-      title: "Lichi back springboot",
+      title: " API RESTful desarrollada con Spring Boot",
       github: "https://github.com/nanashi-eth/lichi.git",
     },
     {
       id: 4,
       image: Img4,
-      title: "Man in the middle python",
+      title: "Juego educativo desarrollado con Python",
       github: "https://github.com/nanashi-eth/Man-in-the-middle.git",
     },
     {
       id: 5,
       image: Img5,
-      title: "Docker",
+      title: "Guía sobre cómo utilizar Docker de forma eficaz y segura",
       file: docker,
       github: "https://github.com/nanashi-eth/docker.git",
     },
@@ -56,7 +56,7 @@ const Portfolio = () => {
         {data.map(({ id, image, title, github, file }) => {
           return (
             <article className="portfolio__item" key={id}>
-              <div className="protfolio__item-image">
+              <div className="portfolio__item-image">
                 <img src={image} alt={title} />
               </div>
               <h3>{title}</h3>
@@ -94,12 +94,11 @@ const Portfolio = () => {
                       fill="black"
                       width="14"
                       height="14"
-                      viewBox="-5 -7 24 24"
+                      viewBox="0 0 512 512"
                       xmlns="http://www.w3.org/2000/svg"
-                      preserveAspectRatio="xMinYMin"
-                      class="jam jam-download"
+                      className="jam jam-download"
                     >
-                      <path d="M8 6.641l1.121-1.12a1 1 0 0 1 1.415 1.413L7.707 9.763a.997.997 0 0 1-1.414 0L3.464 6.934A1 1 0 1 1 4.88 5.52L6 6.641V1a1 1 0 1 1 2 0v5.641zM1 12h12a1 1 0 0 1 0 2H1a1 1 0 0 1 0-2z" />
+                      <path d="M232 64L280 64 280 214 277 270 300 242 356 189 388 221 256 353 124 221 156 189 212 242 235 270 232 214 232 64ZM64 400L448 400 448 448 64 448 64 400Z" />
                     </svg>
                   </a>
                 )}

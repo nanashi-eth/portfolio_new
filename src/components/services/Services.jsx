@@ -19,12 +19,16 @@ const Services = () => {
               <p>He desarrollado aplicaciones nativas e híbridas utilizando Android y frameworks multiplataforma.</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
-              <p>He implementado APIs RESTful con mecanismos de autenticación segura como JWT.</p>
+              <BiCheck className="skill__list-icon" />
+              <p>He desarrollado módulos ERP/CRM, como un módulo para Odoo, mejorando la eficiencia operativa.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Puedo trabajar con bases de datos como PostgreSQL y MySQL para una gestión robusta de datos.</p>
+              <p>He desarrollado aplicaciones que controlan directamente threads y sockets, implementando soluciones concurrentes para manejar múltiples conexiones de red, con Java.</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Puedo trabajar con bases de datos como PostgreSQL, Oracle y MySQL para una gestión robusta de datos.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
@@ -41,7 +45,7 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>He desarrollado aplicaciones web modernas utilizando frameworks como Angular.</p>
+              <p>He desarrollado aplicaciones web modernas utilizando frameworks como Angular y React.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
@@ -50,6 +54,10 @@ const Services = () => {
             <li>
               <BiCheck className="service__list-icon" />
               <p>He trabajado con frameworks de backend como Spring Boot y NodeJS para el desarrollo full-stack.</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>He implementado APIs RESTful con mecanismos de autenticación segura como JWT.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
